@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Practitioner Flyer</title>
+    <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        bengali: ['"Kalpurush"', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-blue': '#273C85',
+                        'brand-green': '#197846',
+                        'brand-red': '#C1272D',
+                        'brand-bg': '#F4F6F9'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Kalpurush', Arial, sans-serif;
+        }
+        
+        .a4-page {
+            width: 210mm;
+            height: 297mm;
+            background-color: white;
+            position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 8mm;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        /* Dashed borders for lists */
+        .dashed-border-b { border-bottom: 1px dashed #9ca3af; }
+        .dashed-border-r { border-right: 1px dashed #9ca3af; }
+        
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .a4-page {
+                box-shadow: none;
+                width: 210mm;
+                min-height: 297mm;
+                margin: 0;
+                padding: 8mm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a4-page">
+        
+   
+
+        <header class="relative z-10 flex justify-between items-start">
+            
+            <!-- Left Side Details -->
+            <div class="w-4/6 pt-1">
+                <p class="text-gray-900 font-black text-2xl mb-0.5" style="-webkit-text-stroke: 0.4px #111827;">প্রাথমিক চিকিৎসক</p>
+                <h1 class="text-brand-blue font-black text-[50px] leading-tight tracking-wide" style="-webkit-text-stroke: 0.8px #273C85;">নয়ন চন্দ্র সরকার</h1>
+                <h2 class="text-brand-green font-black text-[26px] leading-none tracking-tight mb-2" style="-webkit-text-stroke: 0.5px #197846;">জেনারেল প্র্যাকটিশনার</h2>
+                
+                <div class="text-gray-955 font-black text-[25px] leading-snug mb-2" style="-webkit-text-stroke: 0.3px #030712;">
+                    <p class="mb-1">ডিপ্লোমা ইন মেডিকেল এসিস্ট্যান্ট</p>
+                    <p class="mb-1">ডিপ্লোমা ইন প্যারামেডিকেল ইনস্টিটিউট, দিনাজপুর।</p>
+                </div>
+
+                <div class="bg-brand-blue text-white rounded-full px-4 py-1 text-[18px] font-medium inline-block mb-3 shadow-sm">
+                    বাত ব্যথা চর্মরোগ পরিপাকতন্ত্রের রোগ এবং যৌনরোগে অভিজ্ঞ
+                </div>
+
+                <div class="flex items-center gap-2 px-4 py-2 w-max">
+                    <i class="fa-solid fa-file-medical text-brand-green text-2xl"></i>
+                    <div class="font-black text-[20px] leading-none">
+                        <span class="text-gray-950" style="-webkit-text-stroke: 0.3px #030712;">গভ: রেজিস্ট্রেশন নম্বর :- </span>
+                        <span class="text-gray-955 text-[24px] ml-1 tracking-wider" style="-webkit-text-stroke: 0.6px #030712;">২৫৭৭০১৪</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-2/5 flex flex-col items-end pr-5">
+           
+                
+                <!-- Doctor Image Container -->
+                <div class=" z-10 w-auto h-auto flex items-end justify-center relative group">
+                  
+                    <!-- Transparent Doctor Image -->
+                    <img src="noyon-profile-img.png" alt="Doctor Portrait" class="w-[110%] h-[110%] object-contain object-bottom" />
+                </div>
+            </div>
+        </header>
+
+        <main class="grid grid-cols-12 gap-4 mt-2 relative z-10 flex-grow">
+            
+            <!-- Left Column: Primary Services -->
+            <div class="col-span-7 flex flex-col">
+                <div class="bg-brand-blue text-white text-center py-1.5 rounded-t-xl font-bold text-[20px] tracking-wide border-2 border-brand-blue border-b-0">
+                    ** প্রাথমিক চিকিৎসা সেবা সমূহ :
+                </div>
+                <div class="border-2 border-brand-blue border-t-0 rounded-b-xl bg-white p-3 flex-grow flex flex-col gap-3">
+                    
+                    <!-- Item 1 -->
+                    <div class="flex gap-3 items-start dashed-border-b pb-2">
+                        <div class="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center text-white shrink-0 shadow-inner">
+                            <i class="fa-solid fa-joint text-xl"></i>
+                        </div>
+                        <p class="text-[19.3px] font-black text-gray-955 leading-tight mt-[-2px]" style="-webkit-text-stroke: 0.4px #030712;">
+                            * বাত ব্যথা, কোমরের ব্যথা, ঘাড়ের ব্যথা, জয়েন্টের ব্যথা, স্নায়ুর ব্যথা, মাথা ব্যথা ( মাইগ্রেন )
+                        </p>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex gap-3 items-start dashed-border-b pb-2">
+                        <div class="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center text-white shrink-0 shadow-inner">
+                            <i class="fa-solid fa-head-side-mask text-xl"></i>
+                        </div>
+                        <p class="text-[19.3px] font-black text-gray-955 leading-tight mt-[-2px]" style="-webkit-text-stroke: 0.4px #030712;">
+                            * চর্মরোগ-ডাস্ট এলার্জি, ফুড এলার্জি, স্কাবিস, পোকামাকড় কামড়ের ফলে এলার্জি, পোড়া, ক্ষত, পেটেররোগ, এ্যাপথাস আলসার, চুল পড়া সমস্যা, শ্বাসকষ্ট, ব্রণ, মেছতা, একজিমা, টিনিয়া (দাদ)
+                        </p>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="flex gap-3 items-start dashed-border-b pb-2">
+                        <div class="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center text-white shrink-0 shadow-inner">
+                            <i class="fa-solid fa-venus-mars text-xl"></i>
+                        </div>
+                        <p class="text-[19.3px] font-black text-gray-955 leading-tight mt-[-2px]" style="-webkit-text-stroke: 0.4px #030712;">
+                            * যৌনরোগ : পুরুষ - Premature Ejaculation, Erectile dysfunction, মহিলা - Leucorrhea, Gonorrhea, Irregular Menstruation
+                        </p>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="flex gap-3 items-start pb-0">
+                        <div class="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center text-white shrink-0 shadow-inner">
+                            <i class="fa-solid fa-capsules text-xl"></i> 
+                        </div>
+                        <p class="text-[19.3px] font-black text-gray-955 leading-tight mt-[-2px]" style="-webkit-text-stroke: 0.4px #030712;">
+                            * পরিপাকতন্ত্রের রোগ : ডায়রিয়া, বদহজম, পেট ফাঁপা, পেট ব্যথা, বমি বমি ভাব, গ্যাস, টক ঢেকুর, বুক জ্বালাপোড়া, কোষ্ঠকাঠিন্য, খাবারে অরুচি, হজমের সমস্যা
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-span-5 flex flex-col">
+                <div class="bg-brand-green text-white text-center py-1.5 rounded-t-xl font-bold text-[20px] tracking-wide border-2 border-brand-green border-b-0">
+                    ** অন্যান্য সেবা সমূহ :
+                </div>
+                <div class="border-2 border-brand-green border-t-0 rounded-b-xl bg-white p-3 flex-grow flex flex-col gap-3">
+                    
+                    <!-- Items -->
+                    <div class="flex gap-3 items-center dashed-border-b pb-2">
+                        <div class="w-9 h-9 rounded-full bg-brand-green flex items-center justify-center text-white shrink-0 shadow-inner">
+                            <i class="fa-solid fa-heart-pulse text-base"></i>
+                        </div>
+                        <p class="text-[22px] font-black text-gray-955 leading-tight mt-[-2px]" style="-webkit-text-stroke: 0.4px #030712;">* ব্লাড প্রেসার চেকআপ</p>
+                    </div>
+
+                    <div class="flex gap-3 items-center dashed-border-b pb-2">
+                        <div class="w-9 h-9 rounded-full bg-brand-green flex items-center justify-center text-white shrink-0 shadow-inner">
+                            <i class="fa-solid fa-hand-holding-droplet text-base"></i>
+                        </div>
+                        <p class="text-[22px] font-black text-gray-955 leading-tight mt-[-2px]" style="-webkit-text-stroke: 0.4px #030712;">* ডায়াবেটিস চেকআপ</p>
+                    </div>
+
+                    <div class="flex gap-3 items-center dashed-border-b pb-2">
+                        <div class="w-9 h-9 rounded-full bg-brand-green flex items-center justify-center text-white shrink-0 shadow-inner">
+                            <i class="fa-solid fa-droplet text-base"></i>
+                        </div>
+                        <p class="text-[22px] font-black text-gray-955 leading-tight mt-[-2px]" style="-webkit-text-stroke: 0.4px #030712;">* ব্লাড গ্রুপিং</p>
+                    </div>
+
+                    <div class="flex gap-3 items-center dashed-border-b pb-2">
+                        <div class="w-9 h-9 rounded-full bg-brand-green flex items-center justify-center text-white shrink-0 shadow-inner">
+                            <i class="fa-solid fa-flask text-base"></i>
+                        </div>
+                        <p class="text-[22px] font-black text-gray-955 leading-tight mt-[-2px]" style="-webkit-text-stroke: 0.4px #030712;">* স্যালাইন</p>
+                    </div>
+
+                    <div class="flex gap-3 items-center dashed-border-b pb-2">
+                        <div class="w-9 h-9 rounded-full bg-brand-green flex items-center justify-center text-white shrink-0 shadow-inner">
+                            <i class="fa-solid fa-syringe text-base"></i>
+                        </div>
+                        <p class="text-[22px] font-black text-gray-955 leading-tight mt-[-2px]" style="-webkit-text-stroke: 0.4px #030712;">* ক্যানুলা করা</p>
+                    </div>
+
+                    <div class="flex gap-3 items-center pb-0">
+                        <div class="w-9 h-9 rounded-full bg-brand-green flex items-center justify-center text-white shrink-0 shadow-inner">
+                            <i class="fa-solid fa-bandage text-base"></i>
+                        </div>
+                        <p class="text-[22px] font-black text-gray-955 leading-tight mt-[-2px]" style="-webkit-text-stroke: 0.4px #030712;">* কাটা জায়গা সেলাই এবং ড্রেসিং করা</p>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <section class="mt-1 w-full flex flex-col">
+            <div class="bg-brand-blue text-white text-center py-1.5 rounded-t-xl font-bold text-[18px] border-2 border-brand-blue border-b-0">
+                ** ফ্রী সেবা সমূহ/পরামর্শ **
+            </div>
+            <div class="border-2 border-brand-blue border-t-0 rounded-b-xl bg-white p-2">
+                <div class="grid grid-cols-5 gap-1 items-stretch py-1">
+                    
+                    <!-- Free Item 1 -->
+                    <div class="flex gap-1.5 items-center justify-center dashed-border-r px-1">
+                        <div class="w-10 h-10 rounded-full border-[2px] border-brand-blue flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-person-pregnant text-brand-blue text-lg"></i>
+                        </div>
+                        <p class="text-[14px] font-bold text-brand-blue leading-tight tracking-tight drop-shadow-sm text-center">
+                            * গর্ভকালীন<br>অবস্থায়<br>পরামর্শ প্রদান
+                        </p>
+                    </div>
+
+                    <!-- Free Item 2 -->
+                    <div class="flex gap-1.5 items-center justify-center dashed-border-r px-1">
+                        <div class="w-10 h-10 rounded-full border-[2px] border-brand-blue flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-children text-brand-blue text-lg"></i>
+                        </div>
+                        <p class="text-[14px] font-bold text-brand-blue leading-tight tracking-tight drop-shadow-sm text-center">
+                            * পরিবার<br>পরিকল্পনা বিষয়ে<br>পরামর্শ প্রদান
+                        </p>
+                    </div>
+
+                    <!-- Free Item 3 -->
+                    <div class="flex gap-1.5 items-center justify-center dashed-border-r px-1">
+                        <div class="w-10 h-10 rounded-full border-[2px] border-brand-blue flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-heart-pulse text-brand-blue text-lg"></i>
+                        </div>
+                        <p class="text-[14px] font-bold text-brand-blue leading-tight tracking-tight drop-shadow-sm text-center">
+                            * সুস্থ জীবন<br>যাপন ও ডায়েট<br>বিষয়ে পরামর্শ
+                        </p>
+                    </div>
+
+                    <!-- Free Item 4 -->
+                    <div class="flex gap-1.5 items-center justify-center dashed-border-r px-1">
+                        <div class="w-10 h-10 rounded-full border-[2px] border-brand-blue flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-baby text-brand-blue text-lg"></i>
+                        </div>
+                        <p class="text-[14px] font-bold text-brand-blue leading-tight tracking-tight drop-shadow-sm text-center">
+                            * শিশুর শারীরিক<br>বিকাশ বৃদ্ধি<br>বিষয়ক পরামর্শ
+                        </p>
+                    </div>
+
+                    <!-- Free Item 5 -->
+                    <div class="flex gap-1.5 items-center justify-center px-1">
+                        <div class="w-10 h-10 rounded-full border-[2px] border-brand-blue flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-syringe text-brand-blue text-lg"></i>
+                        </div>
+                        <p class="text-[14px] font-bold text-brand-blue leading-tight tracking-tight drop-shadow-sm text-center">
+                        * শিশুর টিকা<br>বিষয়ক<br>পরামর্শ
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-1 flex flex-col gap-1.5 relative z-10">
+            
+            <!-- Contact Info Row -->
+            <div class="flex gap-3">
+                <!-- Mobile box -->
+                <div class="w-2/5 bg-brand-green text-white rounded-xl flex items-center justify-center gap-5 px-3 py-2 shadow-sm border-2 border-brand-green">
+                    <i class="fa-solid fa-phone-volume text-3xl"></i>
+                    <div>
+                        <p class="text-[20px] font-black text-white" style="-webkit-text-stroke: 0.2px currentColor;">মোবাইল:</p>
+                        <p class="text-[28px] font-black tracking-wider text-white" style="-webkit-text-stroke: 0.3px currentColor;">01786738206</p>
+                    </div>
+                </div>
+
+                <!-- Visiting Hours box -->
+                <div class="w-3/5 bg-brand-blue text-white rounded-xl flex items-center gap-5 px-3 py-2 shadow-sm border-2 border-brand-blue">
+                    <i class="fa-solid fa-calendar-days text-3xl ml-1 shrink-0"></i>
+                    <div class="leading-tight">
+                        <p class="text-[19px] font-black mb-1 text-white" style="-webkit-text-stroke: 0.2px currentColor;">রোগী দেখার সময় :</p>
+                        <p class="text-[20px] font-black text-white" style="-webkit-text-stroke: 0.2px currentColor;">প্রতি শুক্রবার সকাল ১১ টা থেকে দুপুর ১ টা পর্যন্ত</p>
+                        <p class="text-[20px] font-black text-yellow-300 mt-0.5" style="-webkit-text-stroke: 0.2px currentColor;">এবং বিকেল ৪ টা থেকে রাত ৮ পর্যন্ত</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer Box -->
+            <div class="border-2 border-brand-green bg-white rounded-xl p-2 flex items-center justify-center gap-2 shadow-sm">
+                <i class="fa-solid fa-triangle-exclamation text-brand-green text-2xl shrink-0"></i>
+                <p class="text-[17px] font-black text-gray-950 leading-snug text-center" style="-webkit-text-stroke: 0.4px #030712;">
+                    বিঃদ্রঃ এখানে প্রদত্ত চিকিৎসা ও পরামর্শ প্রাথমিক স্বাস্থ্যসেবা ভিত্তিক,<br> জটিল রোগের ক্ষেত্রে বিশেষজ্ঞ চিকিৎসকের পরামর্শ গ্রহণ করুন।
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
